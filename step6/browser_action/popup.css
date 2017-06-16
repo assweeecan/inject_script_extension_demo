@@ -1,0 +1,9 @@
+#input {
+    width: 600px;
+    height: 300px;
+}
+
+#parent_selector {
+    width: 400px;
+    margin-bottom: 5px;
+}

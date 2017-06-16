@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "inject dom demo step6",
+  "version": "0.0.6",
+  "description": "注入标签到页面",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "inject dom",
+    "default_popup": "browser_action/popup.html"
+  },
+  "icons": {
+    "16": "images/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "libs/default-setting.js",
+      "libs/jquery.slim.min.js",
+      "libs/utils.js",
+      "libs/filereader-promise.js",
+      "libs/chrome-promise.js",
+      "libs/co.min.js",
+      "background/background.js"
+    ]
+  }
+}

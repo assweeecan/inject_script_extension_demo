@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div>
+    <div>
+      <label><input name="mode" type="radio" value="document_start"/>at document start</label>
+      <label><input name="mode" type="radio" value="document_idle"/>at document idle</label>
+      <label><input name="mode" type="radio" value="close" checked/>close</label>
+    </div>
+    <textarea placeholder="Copy script text or drop file into this area" id="input"></textarea>
+    <button id="save">save</button>
+    <div id="extra"></div>
+    <pre id="consolelog"></pre>
+  </div>
+  <script src="../libs/default-setting.js" ,></script>
+  <script src="../libs/jquery.slim.min.js" ,></script>
+  <script src="../libs/utils.js"></script>
+  <script src="../libs/filereader-promise.js"></script>
+  <script src="../libs/chrome-promise.js"></script>
+  <script src="../libs/co.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
